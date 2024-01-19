@@ -4,11 +4,10 @@
 #my_aside{
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
-    height: calc(100vh - 95px);
-    
+    height: calc(100vh - 95px)
 }
 
-#my_main{
+.my_main{
     height: calc(100vh - 95px);
 }
 
