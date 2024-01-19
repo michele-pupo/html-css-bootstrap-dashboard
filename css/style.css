@@ -15,10 +15,15 @@
 .my_section_student{
     height: 170px;
     background-color: #1b72e8;
-    
 }
 
 tbody img{
     width: 30px;
+}
+
+@media screen and (max-width: 576px){
+    .my_aside{
+        width: 70px;
+    }
 }
 
