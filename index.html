@@ -19,7 +19,7 @@
     <header>
 
         <!-- inizio navbar -->
-        <nav class="navbar bg-body-tertiary flex-nowrap justify-content-between px-0 my_navbar">
+        <nav class="navbar bg-body-tertiary flex-nowrap justify-content-between my_navbar">
             <div class="container-fluid d-flex">
                 <div class="me-4">
                     <img src="img/logo.svg" alt="logo">
@@ -39,80 +39,92 @@
     
     <!-- inizio main -->
     
-    <main class="container-fluid p-0">
+    <main class="container-fluid my_main">
         <div class="row flex-nowrap">
 
             <!-- inizio aside sinistra -->
-            <aside class="col-1 px-0">
-                <div id="my_aside">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore pariatur aliquam, cupiditate reprehenderit repudiandae enim minus laboriosam accusantium doloribus ipsum blanditiis quasi corrupti exercitationem iure mollitia, modi repellat ab tenetur.</p>
+            <div class="col-1 row my_aside align-content-between">
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
                 </div>
-            </aside>
+                <div  class="text-center">
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                </div>    
+            </div>
             <!-- fine aside sinistra -->
 
             <!-- inizio sezione azzurra -->
-            <section class="col-11 px-0 my_main overflow-y-auto">
-                <div id="my_section_student">
+            <section class="col my_main overflow-y-auto">
+                <div class="my_section_student">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum mollitia accusantium similique sed nulla, deleniti provident aperiam dolorum. Dolor reprehenderit et quidem officiis dolores ut odit pariatur. Illo, reprehenderit alias.</p>
                 </div>
                 <!-- fine sezione azzurra -->
-
+            
                 <!-- main principale -->
-                <div id="my_section_class">
-                    <div class="container-fluid col-xl-12 d-xl-flex">
-                        <div class="col-xl-8 col-md-12 flex-md-column">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate animi assumenda? Vitae molestias illo, itaque ipsum nesciunt adipisci voluptatum totam, quas dolorum accusamus, dolores asperiores? Autem quis necessitatibus eius.
+                <div class="container-fluid col-xl-12 d-xl-flex">
+                    <div class="col-xl-8 col-md-12 flex-md-column">
+                        <div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa saepe, voluptate illo nam ipsum porro incidunt eum distinctio ratione? Eum doloremque culpa, ducimus mollitia quidem sint praesentium nam temporibus!
+                            Sed ipsam esse doloribus vero ea rerum quod aut provident, voluptas, similique blanditiis eveniet quia vel natus amet fugit architecto sequi libero nisi possimus praesentium? Ipsum vel provident laboriosam rerum?
+                            Quidem maxime, perferendis soluta unde autem eum ducimus aliquid doloremque accusantium alias possimus voluptate voluptatum optio sint debitis recusandae exercitationem iusto temporibus quae quis quibusdam! Sequi sit accusamus consectetur nulla.</p>
+                        </div>
+                    </div>
+                        
+                    <div class="col-xl-4 col-md-12">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio dolorem provident iure pariatur enim vero facere commodi necessitatibus magnam debitis ad molestiae nihil praesentium unde aliquam officia, ut impedit?
+                                Est nesciunt assumenda blanditiis mollitia inventore nulla nobis sint possimus dignissimos praesentium quia earum provident id ex amet maxime aut, error, quae necessitatibus dolores ad, in nemo? Modi, eaque suscipit?
+                                Omnis et corrupti nulla sunt voluptates sequi cumque doloribus cupiditate eveniet eos. Deserunt voluptatibus tenetur illo dolores perferendis ullam vel minus consequatur dolore, accusantium ab minima, necessitatibus quisquam, nihil ut!</p>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate animi assumenda? Vitae molestias illo, itaque ipsum nesciunt adipisci voluptatum totam, quas dolorum accusamus, dolores asperiores? Autem quis necessitatibus eius.
                                 Consequatur, quas ex. Blanditiis, vero officiis atque recusandae aut laborum ratione. Nemo enim error alias, reiciendis tempora adipisci deleniti velit architecto cumque maxime. Reiciendis illo obcaecati deserunt quod nesciunt ipsam.
                                 Corporis praesentium explicabo, ipsa voluptatem est magnam exercitationem! Quas, repellat dolorum, cum quibusdam architecto in, maxime aut quasi ipsam doloribus cupiditate eaque repudiandae beatae. Doloribus a alias ullam dignissimos accusantium.
                                 Iusto, voluptatum tempore quisquam laudantium molestias aut, quibusdam quia asperiores ducimus ea modi deleniti error sed eligendi nostrum debitis illum officia doloremque ut facere quaerat vero necessitatibus. Explicabo, aliquam fuga.
                                 Nam corporis a quam dolorem itaque maiores repellendus, incidunt quis recusandae. Harum reprehenderit libero voluptate quas, veniam quibusdam illum iusto. Rem quod corporis autem, minus ipsa quia maiores architecto sed.
                                 In culpa dolorem blanditiis fuga veritatis sunt impedit delectus non inventore sequi vel, aliquam adipisci facilis asperiores. Fuga officiis eaque, velit dolores ullam mollitia perferendis quibusdam culpa sequi expedita aut.
-                                Maiores, unde eligendi, sunt culpa deserunt doloremque consequuntur voluptates deleniti exercitationem tempore soluta placeat est vel cum? Suscipit consequatur in magnam eligendi voluptates. Quidem labore, magni doloribus quasi aperiam numquam!
+                                aiores, unde eligendi, sunt culpa deserunt doloremque consequuntur voluptates deleniti exercitationem tempore soluta placeat est vel cum? Suscipit consequatur in magnam eligendi voluptates. Quidem labore, magni doloribus quasi aperiam numquam!
                                 Totam, repellendus! Veritatis fuga similique ducimus minus nihil neque error illo cumque inventore voluptates, fugit, nesciunt vel deleniti sed necessitatibus laudantium non, hic praesentium facere officiis vero tempora recusandae distinctio?
-                                Incidunt aut voluptatum tenetur sapiente? Commodi error perferendis, fugit ipsam atque at, velit ex laudantium enim iure aliquid voluptatum nostrum dicta veritatis dolorum modi minus corrupti accusamus quam quasi labore.
-                                Recusandae ipsa voluptas repudiandae dolore, dolorem sequi eveniet. In tenetur quam eius ex voluptate quae, quos consequatur expedita excepturi deleniti dolore maiores facilis? Optio asperiores cumque ullam omnis maxime amet!
-                                Ipsa iure odio enim, quod rerum sequi consequuntur culpa magnam eaque ea, ad porro fuga soluta sed repellendus quia eveniet dolor cupiditate ex quibusdam autem quaerat dolorum et neque. Aliquam?
-                                Tempora, veniam repellat praesentium fugiat quos optio accusantium corporis. Expedita similique odit, hic at iste qui sequi illum possimus distinctio dolorem magnam officiis, temporibus, cupiditate eum veniam debitis iusto eius!
-                                Explicabo eius esse consequatur incidunt dolorem recusandae voluptate perferendis cupiditate? Laboriosam ea molestiae soluta quae quidem sint consectetur enim! Corporis, voluptatem dolores harum animi temporibus quae. Molestiae rem accusantium laborum.
-                                Molestiae aspernatur totam voluptas unde sunt autem cupiditate perferendis laboriosam fugiat porro magnam temporibus aliquam quo, possimus expedita tempore, commodi et tempora est doloribus neque. Eius provident numquam voluptas quo?
-                                Quaerat, enim nesciunt temporibus modi nobis unde maxime tempora amet corporis qui officiis, reprehenderit consequuntur ut laboriosam ullam expedita eius soluta aliquam. Reiciendis non, magni enim placeat tenetur culpa aliquid.
-                                Beatae libero et totam id soluta fuga vel harum adipisci, cumque, asperiores quidem accusantium consectetur aliquid odio aut distinctio eligendi quae, voluptate minima ex sint illum sunt? Sed, voluptate illo.
-                                Numquam non, ipsam, in nulla odio blanditiis tenetur debitis, illo est dolores rerum sed dolorem. Doloremque pariatur fugit, voluptatem non impedit similique tenetur, consequuntur, saepe debitis sit nesciunt libero recusandae.
-                                Odio, adipisci! Quaerat debitis et animi consequatur, esse quia sunt quasi rem, ullam dolore quo nostrum quibusdam beatae eum, consequuntur doloremque labore illum eligendi quod ipsum! Fuga voluptate quos natus!
-                                Obcaecati vitae, voluptatem et rerum eaque placeat? Delectus possimus ipsum rerum quae blanditiis quos dolor exercitationem! Voluptatibus, reiciendis saepe et aperiam modi magnam ratione! Itaque ducimus eveniet exercitationem iste tempore!
-                                Ipsum, eos a veniam alias illum fuga aspernatur quo atque incidunt repellendus quae obcaecati hic qui suscipit nisi minus delectus distinctio earum fugiat ex quod adipisci tempore. Necessitatibus, et in.</p>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa saepe, voluptate illo nam ipsum porro incidunt eum distinctio ratione? Eum doloremque culpa, ducimus mollitia quidem sint praesentium nam temporibus!
-                                Sed ipsam esse doloribus vero ea rerum quod aut provident, voluptas, similique blanditiis eveniet quia vel natus amet fugit architecto sequi libero nisi possimus praesentium? Ipsum vel provident laboriosam rerum?
-                                Quidem maxime, perferendis soluta unde autem eum ducimus aliquid doloremque accusantium alias possimus voluptate voluptatum optio sint debitis recusandae exercitationem iusto temporibus quae quis quibusdam! Sequi sit accusamus consectetur nulla.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-xl-4 col-md-12">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio dolorem provident iure pariatur enim vero facere commodi necessitatibus magnam debitis ad molestiae nihil praesentium unde aliquam officia, ut impedit?
-                                Est nesciunt assumenda blanditiis mollitia inventore nulla nobis sint possimus dignissimos praesentium quia earum provident id ex amet maxime aut, error, quae necessitatibus dolores ad, in nemo? Modi, eaque suscipit?
-                                Omnis et corrupti nulla sunt voluptates sequi cumque doloribus cupiditate eveniet eos. Deserunt voluptatibus tenetur illo dolores perferendis ullam vel minus consequatur dolore, accusantium ab minima, necessitatibus quisquam, nihil ut!</p>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate animi assumenda? Vitae molestias illo, itaque ipsum nesciunt adipisci voluptatum totam, quas dolorum accusamus, dolores asperiores? Autem quis necessitatibus eius.
-                                    Consequatur, quas ex. Blanditiis, vero officiis atque recusandae aut laborum ratione. Nemo enim error alias, reiciendis tempora adipisci deleniti velit architecto cumque maxime. Reiciendis illo obcaecati deserunt quod nesciunt ipsam.
-                                    Corporis praesentium explicabo, ipsa voluptatem est magnam exercitationem! Quas, repellat dolorum, cum quibusdam architecto in, maxime aut quasi ipsam doloribus cupiditate eaque repudiandae beatae. Doloribus a alias ullam dignissimos accusantium.
-                                    Iusto, voluptatum tempore quisquam laudantium molestias aut, quibusdam quia asperiores ducimus ea modi deleniti error sed eligendi nostrum debitis illum officia doloremque ut facere quaerat vero necessitatibus. Explicabo, aliquam fuga.
-                                    Nam corporis a quam dolorem itaque maiores repellendus, incidunt quis recusandae. Harum reprehenderit libero voluptate quas, veniam quibusdam illum iusto. Rem quod corporis autem, minus ipsa quia maiores architecto sed.
-                                    In culpa dolorem blanditiis fuga veritatis sunt impedit delectus non inventore sequi vel, aliquam adipisci facilis asperiores. Fuga officiis eaque, velit dolores ullam mollitia perferendis quibusdam culpa sequi expedita aut.
-                                    Maiores, unde eligendi, sunt culpa deserunt doloremque consequuntur voluptates deleniti exercitationem tempore soluta placeat est vel cum? Suscipit consequatur in magnam eligendi voluptates. Quidem labore, magni doloribus quasi aperiam numquam!
-                                    Totam, repellendus! Veritatis fuga similique ducimus minus nihil neque error illo cumque inventore voluptates, fugit, nesciunt vel deleniti sed necessitatibus laudantium non, hic praesentium facere officiis vero tempora recusandae distinctio?
-                                </p>
-                            </div>    
-                        </div>
-                    </div>    
-                </div>
+                            </p>
+                        </div>    
+                    </div>
+                </div>    
                 <!-- fine main principale -->
-
             </section>
+            <!-- fine sezione azzurra -->
         </div>
     </main>
     <!-- fine main -->

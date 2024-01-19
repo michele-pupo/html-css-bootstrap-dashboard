@@ -1,17 +1,21 @@
 .my_navbar{
     height: 95px;
 }
-#my_aside{
-    background-color: #051e34;
-    background-image: url(../img/sidebar-bg.png);
-    height: calc(100vh - 95px)
-}
 
 .my_main{
-    height: calc(100vh - 95px);
+    height: calc(100vh - 95px); 
 }
 
-#my_section_student{
+.my_aside{
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
+    width: 190px;
+}
+
+.my_section_student{
     height: 170px;
     background-color: #1b72e8;
+    
 }
+
+
