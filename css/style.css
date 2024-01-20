@@ -21,7 +21,11 @@ tbody img{
     width: 30px;
 }
 
-@media screen and (max-width: 576px){
+nav ol li a span, .my_span{
+    background-color: #165bba;
+}
+
+@media screen and (max-width: 575px){
     .my_aside{
         width: 70px;
     }
