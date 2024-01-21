@@ -58,7 +58,6 @@
 
     
     <!-- inizio main -->
-    
     <main class="container-fluid my_main">
         <div class="row flex-nowrap">
 
@@ -75,8 +74,11 @@
             </div>
             <!-- fine aside sinistra -->
 
-            <!-- inizio sezione azzurra -->
+            
+            <!-- inizio sezione con overflow -->
             <section class="col my_main overflow-y-auto">
+
+                <!-- inizio sezione azzurra -->
                 <div class="d-flex justify-content-between align-items-center text-white my_section_student">
                     <div>
                         <h1 class="d-inline ms-3">Boolean</h1>
@@ -123,210 +125,212 @@
                 </div>
                 <!-- fine sezione azzurra -->
             
-                <!-- main principale -->
+                <!-- main principale con sezioni più srtrette e più larghe-->
                 <div class="container-fluid col-xl-12 d-xl-flex">
 
-                    <!-- sezione più larga a sinistra -->
+                    <!-- sezioni più larghe a sinistra -->
                     <div class="col-xl-8 col-md-12 flex-md-column px-3">
                         <div>
                             <h2 class="border border-bottom-0 rounded-top-3 bg-secondary bg-opacity-10 mt-4 mb-0 p-3">Prossime classi</h2>
-                            <table class="table border mt-0 pb-5">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" class="col-5 col-lg-5 col-md-5 col-sm-5 col-xl-5 ps-4 pt-4">Nome</th>
-                                        <th scope="col" class="text-center d-none col-1 d-sm-table-cell col-lg-2 col-md-2 col-sm-2 col-xl-1">Data inizio</th>
-                                        <th scope="col" class="text-center d-none col-1 d-sm-table-cell col-xl-1 col-sm-1 col-xl-1">ROI</th>
-                                        <th scope="col" class="text-center col-3 col-lg-1 col-md-1 col-sm-1 col-xl-1">Stato</th>
-                                        <th scope="col" class="text-center col-3 col-lg-2 col-md-2 col-md-2 col-xl-2">Azioni</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">
-                                            <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
-                                                <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
-                                                </div>
-                                                <span class="ms-3 fs-5 text-secondary-emphasis fs-5">Classe 75</span>
-                                            </a>
-                                        </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">15 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
-                                        <td class="text-center">
-                                            <span class="badge text-bg-success mt-2 fs-6">Done</span>
-                                        </td>
-                                        <td class="text-center col-xl-5">
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </button>
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-trash-can"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
-                                                <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
-                                                </div>
-                                                <span class="ms-3 fs-5 text-secondary-emphasis fs-5">Classe 76</span>
-                                            </a>
-                                        </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">16 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
-                                        <td class="text-center">
-                                            <span class="badge text-bg-success mt-2 fs-6">Done</span>
-                                        </td>
-                                        <td class="text-center col-xl-5">
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </button>
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-trash-can"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
-                                                <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
-                                                </div>
-                                                <span class="ms-3 fs-5 text-secondary-emphasis fs-5">Classe 77</span>
-                                            </a>
-                                        </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">17 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
-                                        <td class="text-center">
-                                            <span class="badge text-bg-warning text-white mt-2 fs-6">process</span>
-                                        </td>
-                                        <td class="text-center col-xl-5">
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </button>
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-trash-can"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
-                                                <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
-                                                </div>
-                                                <span class="ms-3 fs-5 text-secondary-emphasis fs-5">Classe 78</span>
-                                            </a>
-                                        </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">18 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
-                                        <td class="text-center">
-                                            <span class="badge text-bg-success mt-2 fs-6">Done</span>
-                                        </td>
-                                        <td class="text-center col-xl-5">
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </button>
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-trash-can"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
-                                                <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
-                                                </div>
-                                                <span class="ms-3 fs-5 text-secondary-emphasis">Classe 79</span>
-                                            </a>
-                                        </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">19 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
-                                        <td class="text-center">
-                                            <span class="badge text-bg-danger mt-2 fs-6">failed</span>
-                                        </td>
-                                        <td class="text-center col-xl-5">
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </button>
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-trash-can"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
-                                                <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
-                                                </div>
-                                                <span class="ms-3 fs-5 text-secondary-emphasis">Classe 80</span>
-                                            </a>
-                                        </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">20 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
-                                        <td class="text-center">
-                                            <span class="badge text-bg-success mt-2 fs-6">Done</span>
-                                        </td>
-                                        <td class="text-center col-xl-5">
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </button>
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-trash-can"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
-                                                <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
-                                                </div>
-                                                <span class="ms-3 fs-5 text-secondary-emphasis">Classe 81</span>
-                                            </a>
-                                        </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">21 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
-                                        <td class="text-center">
-                                            <span class="badge text-bg-danger mt-2 fs-6">failed</span>
-                                        </td>
-                                        <td class="text-center col-xl-5">
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </button>
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-trash-can"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
-                                                <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
-                                                </div>
-                                                <span class="ms-3 fs-5 text-secondary-emphasis">Classe 82</span>
-                                            </a>
-                                        </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">22 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
-                                        <td class="text-center">
-                                            <span class="badge text-bg-success mt-2 fs-6">Done</span>
-                                        </td>
-                                        <td class="text-center col-xl-5">
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </button>
-                                            <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
-                                                <i class="fa-solid fa-trash-can"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="px-4 pb-4 border rounded-bottom-3">
+                                <table class="table border-bottom mt-0 pb-5">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="col-5 col-lg-5 col-md-5 col-sm-5 col-xl-5 ps-4 pt-4">Nome</th>
+                                            <th scope="col" class="text-center d-none col-1 d-sm-table-cell col-lg-2 col-md-2 col-sm-2 col-xl-1">Data inizio</th>
+                                            <th scope="col" class="text-center d-none col-1 d-sm-table-cell col-xl-1 col-sm-1 col-xl-1">ROI</th>
+                                            <th scope="col" class="text-center col-3 col-lg-1 col-md-1 col-sm-1 col-xl-1">Stato</th>
+                                            <th scope="col" class="text-center col-3 col-lg-2 col-md-2 col-md-2 col-xl-2">Azioni</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
+                                                    <div>
+                                                        <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
+                                                    </div>
+                                                    <span class="ms-3 fs-5 text-secondary-emphasis fs-5">Classe 75</span>
+                                                </a>
+                                            </th>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">15 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success mt-2 fs-6">Done</span>
+                                            </td>
+                                            <td class="text-center col-xl-5">
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
+                                                    <div>
+                                                        <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
+                                                    </div>
+                                                    <span class="ms-3 fs-5 text-secondary-emphasis fs-5">Classe 76</span>
+                                                </a>
+                                            </th>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">16 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success mt-2 fs-6">Done</span>
+                                            </td>
+                                            <td class="text-center col-xl-5">
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
+                                                    <div>
+                                                        <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
+                                                    </div>
+                                                    <span class="ms-3 fs-5 text-secondary-emphasis fs-5">Classe 77</span>
+                                                </a>
+                                            </th>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">17 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-warning text-white mt-2 fs-6">process</span>
+                                            </td>
+                                            <td class="text-center col-xl-5">
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
+                                                    <div>
+                                                        <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
+                                                    </div>
+                                                    <span class="ms-3 fs-5 text-secondary-emphasis fs-5">Classe 78</span>
+                                                </a>
+                                            </th>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">18 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success mt-2 fs-6">Done</span>
+                                            </td>
+                                            <td class="text-center col-xl-5">
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
+                                                    <div>
+                                                        <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
+                                                    </div>
+                                                    <span class="ms-3 fs-5 text-secondary-emphasis">Classe 79</span>
+                                                </a>
+                                            </th>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">19 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-danger mt-2 fs-6">failed</span>
+                                            </td>
+                                            <td class="text-center col-xl-5">
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
+                                                    <div>
+                                                        <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
+                                                    </div>
+                                                    <span class="ms-3 fs-5 text-secondary-emphasis">Classe 80</span>
+                                                </a>
+                                            </th>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">20 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success mt-2 fs-6">Done</span>
+                                            </td>
+                                            <td class="text-center col-xl-5">
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
+                                                    <div>
+                                                        <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
+                                                    </div>
+                                                    <span class="ms-3 fs-5 text-secondary-emphasis">Classe 81</span>
+                                                </a>
+                                            </th>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">21 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-danger mt-2 fs-6">failed</span>
+                                            </td>
+                                            <td class="text-center col-xl-5">
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
+                                                    <div>
+                                                        <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
+                                                    </div>
+                                                    <span class="ms-3 fs-5 text-secondary-emphasis">Classe 82</span>
+                                                </a>
+                                            </th>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">22 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-success mt-2 fs-6">Done</span>
+                                            </td>
+                                            <td class="text-center col-xl-5">
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+                                                <button class="text-center mx-1 mt-1 text-body-secondary bg-light border-secondary rounded-2 py-1 px-2">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
 
 
@@ -334,9 +338,9 @@
                         <div>
                             <h2 class="border border-bottom-0 rounded-top-3 bg-secondary bg-opacity-10 mt-4 mb-0 p-3">F.A.Q.</h2>
                         </div>
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush p-4 border rounded-bottom-3" id="accordionFlushExample">
                             <div class="accordion-item">
-                                <h2 class="accordion-header pt-3 border-start border-end border-top">
+                                <h2 class="accordion-header pt-1 border-bottom ">
                                     <button class="accordion-button collapsed fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                         Come aggiungere un nuovo studente?
                                     </button>
@@ -346,7 +350,7 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header border-start border-end">
+                                <h2 class="accordion-header py-2 border-bottom">
                                     <button class="accordion-button collapsed fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                     Come posso accedere alle informazioni del mio account?
                                     </button>
@@ -356,8 +360,8 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header border-start border-end border-bottom">
-                                    <button class="accordion-button collapsed fs-6 mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <h2 class="accordion-header pt-2">
+                                    <button class="accordion-button collapsed fs-6 mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                     Posso usare questa dashboard da mobile?
                                     </button>
                                 </h2>
@@ -368,28 +372,30 @@
                         </div>
                         <!-- fine sezione faq -->
                     </div>
-                    <!-- fine sezione più larga a sinistra -->
+                    <!-- fine sezioni più larghe a sinistra -->
 
 
-                   <!-- sezione più stretta a destra -->
+                   <!-- sezioni più strette a destra -->
                     <div class="col-xl-4 col-md-12 px-3">
                          <!-- sezione todo -->
                         <div>
                             <h2 class="border border-bottom-0 rounded-top-3 bg-secondary bg-opacity-10 mt-4 mb-0 p-3">Todo</h2>
-                            <ul class="list-group fs-6">
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                    <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
-                                </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                    <label class="form-check-label" for="secondCheckbox">Lezioni su Bootstrap 5 in classe #75</label>
-                                </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                                    <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
-                                </li>
-                            </ul>
+                            <div class="p-4 border rounded-bottom-3">
+                                <ul class="list-group fs-6">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                        <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                        <label class="form-check-label" for="secondCheckbox">Lezioni su Bootstrap 5 in classe #75</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                        <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <!-- fine sezione todo -->
 
@@ -397,29 +403,28 @@
                         <!-- sezione card -->
                         <div class="card mt-4 border p-4">
                             <div class="border rounded-3">
-                            <img src="img/stats.jpeg" class="card-img-top" alt="stats">
-                            <div class="card-body">
-                                <h5 class="card-title">Utenti attivi</h5>
-                                <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item border-top">Gennaio: 1200</li>
-                                <li class="list-group-item">Febbraio: 800</li>
-                                <li class="list-group-item border-bottom">Marzo: 1500</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Visualizza report approfondito</a>
-                            </div>
+                                <img src="img/stats.jpeg" class="card-img-top" alt="stats">
+                                <div class="card-body">
+                                    <h5 class="card-title">Utenti attivi</h5>
+                                    <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item border-top">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item border-bottom">Marzo: 1500</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Visualizza report approfondito</a>
+                                </div>
                             </div>
                         </div>
                         <!-- sezione card -->    
                     </div>
-                    <!-- fine sezione più stretta a destra -->
-
+                    <!-- fine sezioni più strette a destra -->
                 </div>    
-                <!-- fine main principale -->
+                <!-- fine main principale con sezioni più srtrette e più larghe-->
             </section>
-            <!-- fine sezione azzurra -->
+            <!-- fine sezione con overflow -->
         </div>
     </main>
     <!-- fine main -->
