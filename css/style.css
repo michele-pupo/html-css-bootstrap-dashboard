@@ -9,7 +9,7 @@
 .my_aside{
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
-    width: 190px;
+    width: 70px;
 }
 
 .my_section_student{
@@ -18,7 +18,7 @@
 }
 
 tbody img{
-    width: 30px;
+    width: 35px;
 }
 
 nav ol li a span, .my_span{
@@ -29,9 +29,9 @@ nav ol li a span, .my_span{
     width: 50px;
 }
 
-@media only screen and (max-width: 769px) and (min-width: 0px){
+@media only screen and (min-width: 768px) {
     .my_aside{
-        width: 70px;
+        width: 190px;
     }
 }
 
