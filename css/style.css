@@ -9,6 +9,7 @@
 .my_aside{
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
+    background-size: 0%;
     width: 70px;
 }
 
@@ -21,7 +22,7 @@ tbody img{
     width: 35px;
 }
 
-nav ol li a span, .my_span{
+.my_span{
     background-color: #165bba;
 }
 
