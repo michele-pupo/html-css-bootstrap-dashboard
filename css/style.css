@@ -25,7 +25,11 @@ nav ol li a span, .my_span{
     background-color: #165bba;
 }
 
-@media screen and (max-width: 575px){
+.my_logo_mobile{
+    width: 50px;
+}
+
+@media only screen and (max-width: 769px) and (min-width: 0px){
     .my_aside{
         width: 70px;
     }

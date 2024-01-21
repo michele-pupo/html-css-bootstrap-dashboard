@@ -21,15 +21,35 @@
         <!-- inizio navbar -->
         <nav class="navbar bg-body-tertiary flex-nowrap justify-content-between my_navbar">
             <div class="container-fluid d-flex">
-                <div class="me-4">
+                <div class="me-4 d-none d-md-inline">
                     <img src="img/logo.svg" alt="logo">
                 </div>
-                <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
-                <div class="d-flex justify-content-around column-gap-3">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-bars"></i>
+                <div class="d-md-none">
+                    <img class="my_logo_mobile" src="img/mobile-logo.png" alt="mobile logo">
+                </div>
+                <span class="input-group-text border-0"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input class="form-control me-4 bg-secondary bg-opacity-25 py-2"  type="search" placeholder="Prova a cercare: lezioni di laravel" aria-label="Search">
+                <div class="d-flex justify-content-around align-items-center bg-white column-gap-4 fs-3">
+                    <a href=""><i class="fa-solid fa-list text-secondary-emphasis"></i></a>
+                    <a href=""><i class="fa-solid fa-circle-question text-secondary-emphasis"></i></a>
+                    <a href=""><i class="fa-solid fa-ellipsis-vertical text-secondary-emphasis"></i></a>
+                    <div class="btn-group dropstart">
+                        <a href="#" role="button" class="btn btn-secondary bg-white border-0 pt-2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell text-warning fs-3"></i>
+                        </a>
+                        <ul class="dropdown-menu"
+                            <li class="my-2 ms-3">
+                                <a class="dropdown-item w-auto" href="#">Profilo</a>
+                            </li>
+                            <li class="my-2 ms-3">
+                                <a class="dropdown-item w-auto" href="#">Fatturazione</a>
+                            </li>
+                            <li class="my-2 ms-3">
+                                <a class="dropdown-item w-auto" href="#">Logout</a>
+                            </li>
+                            <a href=""></a>
+                        </ul>
+                    </div>   
                 </div>
             </div>
         </nav>
@@ -45,12 +65,12 @@
             <!-- inizio aside sinistra -->
             <div class="col-1 row my_aside align-content-between">
                 <div class="text-xl-start text-sm-center mt-5">
-                    <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-house"></i><span class="ms-3 d-none d-sm-inline">Home</span></button>
-                    <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-chart-simple"></i><span class="ms-4 d-none d-sm-inline">Stats</span></button>
-                    <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-signal"></i><span class="ms-3 d-none d-sm-inline">Signals</span></button>
+                    <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-house"></i><span class="ms-3 d-none d-md-inline">Home</span></button>
+                    <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-chart-simple"></i><span class="ms-4 d-none d-md-inline">Stats</span></button>
+                    <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-signal"></i><span class="ms-3 d-none d-md-inline">Signals</span></button>
                 </div>
                 <div  class="text-center mb-5">
-                    <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-gear"></i><span class="ms-3 d-none d-sm-inline">Admin</span></button>
+                    <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-gear"></i><span class="ms-3 d-none d-md-inline">Admin</span></button>
                 </div>    
             </div>
             <!-- fine aside sinistra -->
@@ -125,17 +145,17 @@
                                         <th scope="row">
                                             <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
                                                 <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-2" alt="class avatar">
+                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3" alt="class avatar">
                                                 </div>
                                                 <span class="ms-3">Classe 75</span>
                                             </a>
                                         </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell pt-3">15 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell py-3">20%</td>
+                                        <td class="text-center col-xl-3 d-none d-sm-table-cell">15 Feb 2021</td>
+                                        <td class="text-center d-none d-sm-table-cell">20%</td>
                                         <td class="text-center">
-                                            <span class="badge text-bg-success mt-2">done</span>
+                                            <span class="badge text-bg-success">done</span>
                                         </td>
-                                        <td class="text-center col-xl-5 py-3">
+                                        <td class="text-center col-xl-5">
                                             <button class="text-center mx-1">
                                                 <i class="fa-solid fa-pencil"></i>
                                             </button>
@@ -148,17 +168,17 @@
                                         <th scope="row">
                                             <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
                                                 <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-2" alt="class avatar">
+                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3" alt="class avatar">
                                                 </div>
                                                 <span class="ms-3">Classe 75</span>
                                             </a>
                                         </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell pt-3">15 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell py-3">20%</td>
+                                        <td class="text-center col-xl-3 d-none d-sm-table-cell">15 Feb 2021</td>
+                                        <td class="text-center d-none d-sm-table-cell">20%</td>
                                         <td class="text-center">
-                                            <span class="badge text-bg-success mt-2">done</span>
+                                            <span class="badge text-bg-success">done</span>
                                         </td>
-                                        <td class="text-center col-xl-5 py-3">
+                                        <td class="text-center col-xl-5">
                                             <button class="text-center mx-1">
                                                 <i class="fa-solid fa-pencil"></i>
                                             </button>
@@ -171,17 +191,17 @@
                                         <th scope="row">
                                             <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
                                                 <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-2" alt="class avatar">
+                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3" alt="class avatar">
                                                 </div>
                                                 <span class="ms-3">Classe 75</span>
                                             </a>
                                         </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell pt-3">15 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell py-3">20%</td>
+                                        <td class="text-center col-xl-3 d-none d-sm-table-cell">15 Feb 2021</td>
+                                        <td class="text-center d-none d-sm-table-cell">20%</td>
                                         <td class="text-center">
-                                            <span class="badge text-bg-success mt-2">done</span>
+                                            <span class="badge text-bg-success">done</span>
                                         </td>
-                                        <td class="text-center col-xl-5 py-3">
+                                        <td class="text-center col-xl-5">
                                             <button class="text-center mx-1">
                                                 <i class="fa-solid fa-pencil"></i>
                                             </button>
@@ -194,17 +214,17 @@
                                         <th scope="row">
                                             <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
                                                 <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-2" alt="class avatar">
+                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3" alt="class avatar">
                                                 </div>
                                                 <span class="ms-3">Classe 75</span>
                                             </a>
                                         </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell pt-3">15 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell py-3">20%</td>
+                                        <td class="text-center col-xl-3 d-none d-sm-table-cell">15 Feb 2021</td>
+                                        <td class="text-center d-none d-sm-table-cell">20%</td>
                                         <td class="text-center">
-                                            <span class="badge text-bg-success mt-2">done</span>
+                                            <span class="badge text-bg-success">done</span>
                                         </td>
-                                        <td class="text-center col-xl-5 py-3">
+                                        <td class="text-center col-xl-5">
                                             <button class="text-center mx-1">
                                                 <i class="fa-solid fa-pencil"></i>
                                             </button>
@@ -217,17 +237,17 @@
                                         <th scope="row">
                                             <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
                                                 <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-2" alt="class avatar">
+                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3" alt="class avatar">
                                                 </div>
                                                 <span class="ms-3">Classe 75</span>
                                             </a>
                                         </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell pt-3">15 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell py-3">20%</td>
+                                        <td class="text-center col-xl-3 d-none d-sm-table-cell">15 Feb 2021</td>
+                                        <td class="text-center d-none d-sm-table-cell">20%</td>
                                         <td class="text-center">
-                                            <span class="badge text-bg-success mt-2">done</span>
+                                            <span class="badge text-bg-success">done</span>
                                         </td>
-                                        <td class="text-center col-xl-5 py-3">
+                                        <td class="text-center col-xl-5">
                                             <button class="text-center mx-1">
                                                 <i class="fa-solid fa-pencil"></i>
                                             </button>
@@ -240,17 +260,17 @@
                                         <th scope="row">
                                             <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
                                                 <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-2" alt="class avatar">
+                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3" alt="class avatar">
                                                 </div>
                                                 <span class="ms-3">Classe 75</span>
                                             </a>
                                         </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell pt-3">15 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell py-3">20%</td>
+                                        <td class="text-center col-xl-3 d-none d-sm-table-cell">15 Feb 2021</td>
+                                        <td class="text-center d-none d-sm-table-cell">20%</td>
                                         <td class="text-center">
-                                            <span class="badge text-bg-success mt-2">done</span>
+                                            <span class="badge text-bg-success">done</span>
                                         </td>
-                                        <td class="text-center col-xl-5 py-3">
+                                        <td class="text-center col-xl-5">
                                             <button class="text-center mx-1">
                                                 <i class="fa-solid fa-pencil"></i>
                                             </button>
@@ -263,17 +283,17 @@
                                         <th scope="row">
                                             <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
                                                 <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-2" alt="class avatar">
+                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3" alt="class avatar">
                                                 </div>
                                                 <span class="ms-3">Classe 75</span>
                                             </a>
                                         </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell pt-3">15 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell py-3">20%</td>
+                                        <td class="text-center col-xl-3 d-none d-sm-table-cell">15 Feb 2021</td>
+                                        <td class="text-center d-none d-sm-table-cell">20%</td>
                                         <td class="text-center">
-                                            <span class="badge text-bg-success mt-2">done</span>
+                                            <span class="badge text-bg-success">done</span>
                                         </td>
-                                        <td class="text-center col-xl-5 py-3">
+                                        <td class="text-center col-xl-5">
                                             <button class="text-center mx-1">
                                                 <i class="fa-solid fa-pencil"></i>
                                             </button>
@@ -286,17 +306,17 @@
                                         <th scope="row">
                                             <a href="#" target="" class="d-flex align-items-center text-black text-decoration-none">
                                                 <div>
-                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-2" alt="class avatar">
+                                                    <img src="img/class-avatar.jpg" class="img-fluid ms-3" alt="class avatar">
                                                 </div>
                                                 <span class="ms-3">Classe 75</span>
                                             </a>
                                         </th>
-                                        <td class="text-center col-xl-3 d-none d-sm-table-cell pt-3">15 Feb 2021</td>
-                                        <td class="text-center d-none d-sm-table-cell py-3">20%</td>
+                                        <td class="text-center col-xl-3 d-none d-sm-table-cell">15 Feb 2021</td>
+                                        <td class="text-center d-none d-sm-table-cell">20%</td>
                                         <td class="text-center">
-                                            <span class="badge text-bg-success mt-2">done</span>
+                                            <span class="badge text-bg-success">done</span>
                                         </td>
-                                        <td class="text-center col-xl-5 py-3">
+                                        <td class="text-center col-xl-5">
                                             <button class="text-center mx-1">
                                                 <i class="fa-solid fa-pencil"></i>
                                             </button>
@@ -312,37 +332,37 @@
 
                         <!-- sezione faq -->
                         <div>
-                            <h2 class="border border-bottom-0 rounded-top-3 bg-secondary bg-opacity-10 mt-4 mb-0 p-3">F.A.Q</h2>
+                            <h2 class="border border-bottom-0 rounded-top-3 bg-secondary bg-opacity-10 mt-4 mb-0 p-3">F.A.Q.</h2>
                         </div>
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header pt-3 border-start border-end border-top">
-                                    <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <button class="accordion-button collapsed fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                         Come aggiungere un nuovo studente?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Clicca sul + in alto nella sezione blu.*</div>
+                                    <div class="accordion-body fs-6">Clicca sul + in alto nella sezione blu.*</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header border-start border-end">
-                                    <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    <button class="accordion-button collapsed fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                     Come posso accedere alle informazioni del mio account?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Clicca sull'icona della campanella.</div>
+                                    <div class="accordion-body fs-6">Clicca sull'icona della campanella.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header border-start border-end border-bottom">
-                                    <button class="accordion-button collapsed fs-5 mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <button class="accordion-button collapsed fs-6 mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                     Posso usare questa dashboard da mobile?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Scarica l'app per mobile.</div>
+                                    <div class="accordion-body fs-6">Scarica l'app per mobile.</div>
                                 </div>
                             </div>
                         </div>
@@ -356,7 +376,7 @@
                          <!-- sezione todo -->
                         <div>
                             <h2 class="border border-bottom-0 rounded-top-3 bg-secondary bg-opacity-10 mt-4 mb-0 p-3">Todo</h2>
-                            <ul class="list-group fs-5">
+                            <ul class="list-group fs-6">
                                 <li class="list-group-item">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
                                     <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
@@ -375,19 +395,21 @@
 
 
                         <!-- sezione card -->
-                        <div class="card mt-4">
-                            <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                        <div class="card mt-4 border p-4">
+                            <div class="border rounded-3">
+                            <img src="img/stats.jpeg" class="card-img-top" alt="stats">
                             <div class="card-body">
                                 <h5 class="card-title">Utenti attivi</h5>
                                 <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese.</p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Gennaio: 1200</li>
+                                <li class="list-group-item border-top">Gennaio: 1200</li>
                                 <li class="list-group-item">Febbraio: 800</li>
-                                <li class="list-group-item">Marzo: 1500</li>
+                                <li class="list-group-item border-bottom">Marzo: 1500</li>
                             </ul>
                             <div class="card-body">
                                 <a href="#" class="card-link">Visualizza report approfondito</a>
+                            </div>
                             </div>
                         </div>
                         <!-- sezione card -->    
