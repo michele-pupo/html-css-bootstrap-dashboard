@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="container-fluid ">
 
         <!-- inizio navbar -->
         <nav class="navbar bg-body-tertiary flex-nowrap justify-content-between my_navbar">
@@ -58,12 +58,12 @@
 
     
     <!-- inizio main -->
-    <main class="container-fluid my_main">
-        <div class="row flex-nowrap">
-
+    <main>
+        <div class="d-flex">
+            
             <!-- inizio aside sinistra -->
-            <div class="col-1 row my_aside align-content-between">
-                <div class="text-xl-start text-sm-center mt-4">
+            <div class="d-flex flex-column my_aside justify-content-between">
+                <div class="d-flex flex-column text-xl-start text-sm-center mt-4">
                     <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-house"></i><span class="ms-3 d-none d-md-inline">Home</span></button>
                     <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-chart-simple"></i><span class="ms-4 d-none d-md-inline">Stats</span></button>
                     <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-signal"></i><span class="ms-3 d-none d-md-inline">Signals</span></button>
@@ -76,7 +76,7 @@
 
             
             <!-- inizio sezione con overflow -->
-            <section class="col my_main overflow-y-auto">
+            <section class="col my_main overflow-y-auto my_section">
 
                 <!-- inizio sezione azzurra -->
                 <div class="d-flex justify-content-between align-items-center text-white my_section_student">

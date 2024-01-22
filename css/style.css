@@ -2,8 +2,8 @@
     height: 95px;
 }
 
-.my_main{
-    height: calc(100vh - 95px); 
+.my_section{
+    height: calc(100vh - 95px);
 }
 
 .my_aside{
