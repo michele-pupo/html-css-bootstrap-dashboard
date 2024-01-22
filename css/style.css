@@ -14,7 +14,7 @@
 }
 
 .my_section_student{
-    height: 170px;
+    height: 300px;
     background-color: #1b72e8;
 }
 
@@ -33,6 +33,10 @@ tbody img{
 @media only screen and (min-width: 768px) {
     .my_aside{
         width: 190px;
+    }
+
+    .my_section_student{
+        height: 170px;
     }
 }
 

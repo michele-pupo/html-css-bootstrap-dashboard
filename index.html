@@ -40,13 +40,13 @@
                             <i class="fa-solid fa-bell text-warning fs-3"></i>
                         </a>
                         <ul class="dropdown-menu"
-                            <li class="my-2 ms-3">
+                            <li class="my-2">
                                 <a class="dropdown-item w-auto" href="#">Profilo</a>
                             </li>
-                            <li class="my-2 ms-3">
+                            <li class="my-2">
                                 <a class="dropdown-item w-auto" href="#">Fatturazione</a>
                             </li>
-                            <li class="my-2 ms-3">
+                            <li class="my-2">
                                 <a class="dropdown-item w-auto" href="#">Logout</a>
                             </li>
                             <a href=""></a>
@@ -81,36 +81,40 @@
             <section class="col my_main overflow-y-auto my_section">
 
                 <!-- inizio sezione azzurra -->
-                <div class="d-flex justify-content-between align-items-center text-white my_section_student">
+                <div class="d-md-flex justify-content-between align-items-center text-white my_section_student">
+                    <div class="d-flex align-items-start me-5 mb-4 order-last pt-3 pt-xl-0">
+                        <h3 class="fs-5 pe-4 pt-2 ms-3">Nuovo Studente</h3>
+                        <button class="btn btn-outline-light border border-white fs-3 px-3 pb-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                    </div>
                     <div>
                         <h1 class="d-inline ms-3">Boolean</h1>
-                        <span class="my_span fs-6 ec-badge badge rounded-pill ms-3 mt-3">Piano blaze</span>
+                        <span class="my_span fs-6 badge rounded-pill ms-3 mt-3">Piano blaze</span>
                         <div>
                             <nav class="fs-5 mt-3 ms-3" style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item">
                                         <a href="#">
-                                            <span class="my_span ec-badge badge rounded-pill mb-3">3 app</span>
+                                            <span class="my_span badge rounded-pill mb-3">3 app</span>
                                         </a>
                                     </li>
-                                    <li class="ec-breadcrumb breadcrumb-item active ps-0 ps-1" aria-current="page">
+                                    <li class="breadcrumb-item active ps-0 ps-1" aria-current="page">
                                         <a class="text-decoration-none" href="#">
-                                            <span class="my_span ec-badge badge rounded-pill d-none d-lg-inline me-2">Boolean mobile app</span>
+                                            <span class="my_span badge rounded-pill d-none d-lg-inline me-2">Boolean mobile app</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a class="text-decoration-none me-2" href="#">
-                                            <span class="my_span ec-badge badge rounded-pill d-none d-lg-inline">Boolean web app</span>
+                                            <span class="my_span badge rounded-pill d-none d-lg-inline">Boolean web app</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a class="text-decoration-none" href="#">
-                                            <span class="my_span ec-badge badge rounded-pill d-none d-lg-inline">Boolean blog app</span>
+                                            <span class="my_span badge rounded-pill d-none d-lg-inline">Boolean blog app</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a class="text-decoration-none" href="#">
-                                            <span class="my_span ec-badge badge rounded-pill d-lg-none">+</span>
+                                            <span class="my_span badge rounded-pill d-lg-none">+</span>
                                         </a>
                                     </li>
                                 </ol>
@@ -118,13 +122,10 @@
                         </div>
                     </div>
                     <div>
-                        <h3 class="fs-5">Studenti online negli ultimi 30 minuti</h3>
-                        <h4 class="fs-1">125</h4>
+                        <h3 class="fs-5 ms-3">Studenti online negli ultimi 30 minuti</h3>
+                        <h4 class="fs-1 ms-3">125</h4>
                     </div>
-                    <div class="d-flex align-items-start me-5 mb-4">
-                        <h3 class="fs-5 pe-4 pt-2">Nuovo Studente</h3>
-                        <button class="ec-btn btn btn-primary border border-white fs-3 px-3 pb-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-                    </div>
+                    
 
                     <!--inizio modale nuovo studente-->
                     <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -185,7 +186,7 @@
                                         <label for="town" class="form-label">Città</label>
                                         <input type="text" class="form-control" id="town">
                                     </div>
-                                    <div class="ec-w-30">
+                                    <div>
                                         <label for="state" class="form-label">Stato</label>
                                         <select class="form-select" aria-label="Default select example" id="state">
                                             <option selected>Scegli...</option>
@@ -196,7 +197,7 @@
                                             <option value="5">Inghilterra</option>
                                         </select>
                                     </div>
-                                    <div class="ec-w-20">
+                                    <div>
                                         <label for="cap" class="form-label">CAP</label>
                                         <input type="text" class="form-control" id="cap">
                                     </div>
