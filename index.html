@@ -65,7 +65,7 @@
             
             <!-- inizio aside sinistra -->
             <div class="d-flex flex-column my_aside justify-content-between">
-                <div class="d-flex flex-column text-xl-start text-sm-center mt-4">
+                <div class="d-flex flex-column text-xl-start text-sm-center mt-4 gap-2">
                     <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-house"></i><span class="ms-3 d-none d-md-inline">Home</span></button>
                     <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-chart-simple"></i><span class="ms-4 d-none d-md-inline">Stats</span></button>
                     <button type="button" class="btn btn-outline-secondary border-0 text-white fs-5"><i class="fa-solid fa-signal"></i><span class="ms-3 d-none d-md-inline">Signals</span></button>
@@ -82,53 +82,16 @@
 
                 <!-- inizio sezione azzurra -->
                 <div class="d-md-flex justify-content-between align-items-center text-white my_section_student">
+
+                    <!-- sezione nuvo studente, posizionata alla fine in modalità webapp -->
                     <div class="d-flex align-items-start me-5 mb-4 order-last pt-3 pt-xl-0">
                         <h3 class="fs-5 pe-4 pt-2 ms-3">Nuovo Studente</h3>
                         <button class="btn btn-outline-light border border-white fs-3 px-3 pb-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
                     </div>
-                    <div>
-                        <h1 class="d-inline ms-3">Boolean</h1>
-                        <span class="my_span fs-6 badge rounded-pill ms-3 mt-3">Piano blaze</span>
-                        <div>
-                            <nav class="fs-5 mt-3 ms-3" style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">
-                                        <a href="#">
-                                            <span class="my_span badge rounded-pill mb-3">3 app</span>
-                                        </a>
-                                    </li>
-                                    <li class="breadcrumb-item active ps-0 ps-1" aria-current="page">
-                                        <a class="text-decoration-none" href="#">
-                                            <span class="my_span badge rounded-pill d-none d-lg-inline me-2">Boolean mobile app</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-decoration-none me-2" href="#">
-                                            <span class="my_span badge rounded-pill d-none d-lg-inline">Boolean web app</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-decoration-none" href="#">
-                                            <span class="my_span badge rounded-pill d-none d-lg-inline">Boolean blog app</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-decoration-none" href="#">
-                                            <span class="my_span badge rounded-pill d-lg-none">+</span>
-                                        </a>
-                                    </li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="fs-5 ms-3">Studenti online negli ultimi 30 minuti</h3>
-                        <h4 class="fs-1 ms-3">125</h4>
-                    </div>
-                    
+                    <!-- fine sezione nuvo studente, posizionata alla fine in modalità webapp -->
 
                     <!--inizio modale nuovo studente-->
-                    <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas offcanvas-end w-auto" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header border border-white">
                             <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -176,7 +139,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-3">
+                            <div class="w-100 mb-3">
                                 <label for="address" class="form-label">Indirizzo</label>
                                 <input type="text" class="form-control" id="address">
                             </div>
@@ -203,7 +166,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-3">
+                            <div class="w-60 mb-3">
                                 <label for="filefoto" class="form-label">Foto</label>
                                 <input class="form-control" type="file" id="filefoto">
                             </div>
@@ -218,6 +181,51 @@
                         </div>
                     </div>
                     <!--fine modale nuovo studente-->
+
+                    <!-- inizio sezione breadcrumb -->
+                    <div class="pt-xl-4">
+                        <h1 class="d-inline ms-3">Boolean</h1>
+                        <span class="my_span fs-6 badge rounded-pill ms-3 mt-3">Piano blaze</span>
+                        <div>
+                            <nav class="fs-5 mt-3 ms-3" style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="#">
+                                            <span class="my_span badge rounded-pill mb-3">3 app</span>
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item active ps-0 ps-1" aria-current="page">
+                                        <a class="text-decoration-none" href="#">
+                                            <span class="my_span badge rounded-pill d-none d-lg-inline me-2">Boolean mobile app</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none me-2" href="#">
+                                            <span class="my_span badge rounded-pill d-none d-lg-inline">Boolean web app</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none" href="#">
+                                            <span class="my_span badge rounded-pill d-none d-lg-inline">Boolean blog app</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none" href="#">
+                                            <span class="my_span badge rounded-pill d-lg-none">+</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- fine sezione breadcrumb -->
+
+                    <!-- inizio sezione studenti online -->
+                    <div>
+                        <h3 class="fs-5 ms-3">Studenti online negli ultimi 30 minuti</h3>
+                        <h4 class="fs-1 ms-3">125</h4>
+                    </div>
+                    <!-- fine sezione studenti online -->
                 </div>
                 <!-- fine sezione azzurra -->
             
@@ -228,7 +236,7 @@
                     <div class="col-xl-8 col-md-12 flex-md-column px-3">
                         <div>
                             <h2 class="border border-bottom-0 rounded-top-3 bg-secondary bg-opacity-10 mt-4 mb-0 p-3">Prossime classi</h2>
-                            <div class="px-4 pb-4 border rounded-bottom-3">
+                            <div class="px-3 pb-3 border rounded-bottom-3">
                                 <table class="table border-bottom mt-0 pb-5">
                                     <thead>
                                         <tr>
@@ -246,11 +254,11 @@
                                                     <div>
                                                         <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
                                                     </div>
-                                                    <span class="ms-3 fs-5 text-secondary-emphasis fs-5">Classe 75</span>
+                                                    <span class="ms-3 fs-5 text-secondary fs-6">Classe 75</span>
                                                 </a>
                                             </th>
-                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">15 Feb 2021</td>
-                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-6 pt-3">15 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-6 pt-3">20%</td>
                                             <td class="text-center">
                                                 <span class="badge text-bg-success mt-2 fs-6">Done</span>
                                             </td>
@@ -269,11 +277,11 @@
                                                     <div>
                                                         <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
                                                     </div>
-                                                    <span class="ms-3 fs-5 text-secondary-emphasis fs-5">Classe 76</span>
+                                                    <span class="ms-3 fs-5 text-secondary fs-6">Classe 76</span>
                                                 </a>
                                             </th>
-                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">16 Feb 2021</td>
-                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-6 pt-3">16 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-6 pt-3">20%</td>
                                             <td class="text-center">
                                                 <span class="badge text-bg-success mt-2 fs-6">Done</span>
                                             </td>
@@ -292,11 +300,11 @@
                                                     <div>
                                                         <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
                                                     </div>
-                                                    <span class="ms-3 fs-5 text-secondary-emphasis fs-5">Classe 77</span>
+                                                    <span class="ms-3 fs-5 text-secondary fs-6">Classe 77</span>
                                                 </a>
                                             </th>
-                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">17 Feb 2021</td>
-                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-6 pt-3">17 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-6 pt-3">20%</td>
                                             <td class="text-center">
                                                 <span class="badge text-bg-warning text-white mt-2 fs-6">process</span>
                                             </td>
@@ -315,11 +323,11 @@
                                                     <div>
                                                         <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
                                                     </div>
-                                                    <span class="ms-3 fs-5 text-secondary-emphasis fs-5">Classe 78</span>
+                                                    <span class="ms-3 fs-5 text-secondary fs-6">Classe 78</span>
                                                 </a>
                                             </th>
-                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">18 Feb 2021</td>
-                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-6 pt-3">18 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-6 pt-3">20%</td>
                                             <td class="text-center">
                                                 <span class="badge text-bg-success mt-2 fs-6">Done</span>
                                             </td>
@@ -338,11 +346,11 @@
                                                     <div>
                                                         <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
                                                     </div>
-                                                    <span class="ms-3 fs-5 text-secondary-emphasis">Classe 79</span>
+                                                    <span class="ms-3 fs-5 text-secondary fs-6">Classe 79</span>
                                                 </a>
                                             </th>
-                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">19 Feb 2021</td>
-                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-6 pt-3">19 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-6 pt-3">20%</td>
                                             <td class="text-center">
                                                 <span class="badge text-bg-danger mt-2 fs-6">failed</span>
                                             </td>
@@ -361,11 +369,11 @@
                                                     <div>
                                                         <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
                                                     </div>
-                                                    <span class="ms-3 fs-5 text-secondary-emphasis">Classe 80</span>
+                                                    <span class="ms-3 fs-5 text-secondary fs-6">Classe 80</span>
                                                 </a>
                                             </th>
-                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">20 Feb 2021</td>
-                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-6 pt-3">20 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-6 pt-3">20%</td>
                                             <td class="text-center">
                                                 <span class="badge text-bg-success mt-2 fs-6">Done</span>
                                             </td>
@@ -384,11 +392,11 @@
                                                     <div>
                                                         <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
                                                     </div>
-                                                    <span class="ms-3 fs-5 text-secondary-emphasis">Classe 81</span>
+                                                    <span class="ms-3 fs-5 text-secondary fs-6">Classe 81</span>
                                                 </a>
                                             </th>
-                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">21 Feb 2021</td>
-                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-6 pt-3">21 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-6 pt-3">20%</td>
                                             <td class="text-center">
                                                 <span class="badge text-bg-danger mt-2 fs-6">failed</span>
                                             </td>
@@ -407,11 +415,11 @@
                                                     <div>
                                                         <img src="img/class-avatar.jpg" class="img-fluid ms-3 py-1" alt="class avatar">
                                                     </div>
-                                                    <span class="ms-3 fs-5 text-secondary-emphasis">Classe 82</span>
+                                                    <span class="ms-3 fs-5 text-secondary fs-6">Classe 82</span>
                                                 </a>
                                             </th>
-                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-5 pt-3">22 Feb 2021</td>
-                                            <td class="text-center d-none d-sm-table-cell fs-5 pt-3">20%</td>
+                                            <td class="text-center col-xl-3 d-none d-sm-table-cell fs-6 pt-3">22 Feb 2021</td>
+                                            <td class="text-center d-none d-sm-table-cell fs-6 pt-3">20%</td>
                                             <td class="text-center">
                                                 <span class="badge text-bg-success mt-2 fs-6">Done</span>
                                             </td>
@@ -434,9 +442,9 @@
                         <div>
                             <h2 class="border border-bottom-0 rounded-top-3 bg-secondary bg-opacity-10 mt-4 mb-0 p-3">F.A.Q.</h2>
                         </div>
-                        <div class="accordion accordion-flush p-4 border rounded-bottom-3" id="accordionFlushExample">
+                        <div class="accordion accordion-flush p-3 border rounded-bottom-3" id="accordionFlushExample">
                             <div class="accordion-item">
-                                <h2 class="accordion-header pt-1 border-bottom ">
+                                <h2 class="accordion-header border-bottom ">
                                     <button class="accordion-button collapsed fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                         Come aggiungere un nuovo studente?
                                     </button>
@@ -457,7 +465,7 @@
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header pt-2">
-                                    <button class="accordion-button collapsed fs-6 mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <button class="accordion-button collapsed fs-6 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                     Posso usare questa dashboard da mobile?
                                     </button>
                                 </h2>
@@ -476,7 +484,7 @@
                          <!-- sezione todo -->
                         <div>
                             <h2 class="border border-bottom-0 rounded-top-3 bg-secondary bg-opacity-10 mt-4 mb-0 p-3">Todo</h2>
-                            <div class="p-4 border rounded-bottom-3">
+                            <div class="p-3 border rounded-bottom-3">
                                 <ul class="list-group fs-6">
                                     <li class="list-group-item">
                                         <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
@@ -497,7 +505,7 @@
 
 
                         <!-- sezione card -->
-                        <div class="card mt-4 border p-4">
+                        <div class="card mt-4 border p-3">
                             <div class="border rounded-3">
                                 <img src="img/stats.jpeg" class="card-img-top" alt="stats">
                                 <div class="card-body">
